@@ -1,0 +1,5 @@
+C:\Users\VHSA-0164\Documents\ServicioMersol\MersolService.exe
+C:\Users\VHSA-0164\Documents\ServicioMersol\MersolService.dll
+C:\Users\VHSA-0164\Documents\ServicioMersol\MersolService.deps.json
+C:\Users\VHSA-0164\Documents\ServicioMersol\MersolService.runtimeconfig.json
+C:\Users\VHSA-0164\Documents\ServicioMersol\MersolService.pdb

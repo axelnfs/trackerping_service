@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\PingService.exe
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\PingService.deps.json
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\PingService.runtimeconfig.json
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\PingService.dll
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\PingService.pdb
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.AssemblyInfo.cs
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.sourcelink.json
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.dll
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\refint\PingService.dll
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.pdb
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\PingService.genruntimeconfig.cache
+C:\Users\Usuario\Documents\PROYECTOS\Tracker ping\trackerping_service\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ref\PingService.dll

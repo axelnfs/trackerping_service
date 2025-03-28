@@ -1,0 +1,14 @@
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ServicioPingMersol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ServicioPingMersol.AssemblyInfoInputs.cache
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ServicioPingMersol.AssemblyInfo.cs
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ServicioPingMersol.csproj.CoreCompileInputs.cache
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ServicioPingMersol.genruntimeconfig.cache
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\MersolService.exe
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\MersolService.deps.json
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\MersolService.runtimeconfig.json
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\MersolService.dll
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\bin\Debug\net8.0\MersolService.pdb
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\MersolService.dll
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\refint\MersolService.dll
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\MersolService.pdb
+C:\Users\VHSA-0164\Source\Repos\ServicioPingMersol\ServicioPingMersol\obj\Debug\net8.0\ref\MersolService.dll
