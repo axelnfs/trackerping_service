@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9Vs/41ctcHM=",
+  "dgSpecHash": "JvY5qSODCnk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\PROYECTOS\\Tracker ping\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.codedom\\9.0.4\\system.codedom.9.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.management\\9.0.4\\system.management.9.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

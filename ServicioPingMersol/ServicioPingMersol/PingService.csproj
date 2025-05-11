@@ -8,4 +8,8 @@
     <AssemblyName>PingService</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="9.0.4" />
+  </ItemGroup>
+
 </Project>

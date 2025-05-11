@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\PROYECTOS\\Tracker ping\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\GitHub\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\PROYECTOS\\Tracker ping\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj": {
+    "C:\\Users\\Usuario\\Documents\\GitHub\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\PROYECTOS\\Tracker ping\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj",
         "projectName": "PingService",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\PROYECTOS\\Tracker ping\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\PingService.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\PROYECTOS\\Tracker ping\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\trackerping_service\\ServicioPingMersol\\ServicioPingMersol\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,11 +44,18 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

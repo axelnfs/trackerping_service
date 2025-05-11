@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Management;
 using System.Net;
 using System.Net.Http;
 using System.Net.NetworkInformation;
@@ -24,8 +25,8 @@ class Program
         IntPtr handle = GetConsoleWindow();
         ShowWindow(handle, SW_HIDE);
 
-        string ipAddress = "you.api.com";
-        Ping pingSender = new Ping();
+        string ipAddress = "https://localhost:7001";
+        Ping pingSender = new();
 
         while (true)
         {
@@ -33,20 +34,27 @@ class Program
             {
                 EquipoInfo equipoInfo = ObtenerEquipoInfo();
 
-                PingReply reply = pingSender.Send(ipAddress);
-                if (reply.Status == IPStatus.Success)
+                // Verificar si el equipo está activo
+                if (EquipoEstaActivo())
                 {
-                    Console.WriteLine($"Ping a {ipAddress} - Estado: {reply.Status}");
-                    await EnviarDatosEquipo(equipoInfo, "tu.api.com/EquipoRemotoPing");
+                    PingReply reply = pingSender.Send("google.com.mx"); // Aquí deberíamos hacer ping a nuestro propio servidor
+                    if (reply.Status == IPStatus.Success)
+                    {
+                        Console.WriteLine($"Ping a {ipAddress} - Estado: {reply.Status}");
+                        await EnviarDatosEquipo(equipoInfo, "https://localhost:7001/api/Tracking");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("El equipo no está activo. No se enviarán datos.");
                 }
             }
             catch (Exception ex)
             {
-                // Manejar la excepción sin interrumpir la ejecución del programa
                 Console.WriteLine($"Error: {ex.Message}");
             }
 
-            Thread.Sleep(600000); // Esperar 10 MINUTOS
+            Thread.Sleep(1000);
         }
     }
 
@@ -100,24 +108,70 @@ class Program
         }
         catch (Exception ex)
         {
-            // Manejar la excepción sin interrumpir la ejecución del programa
             Console.WriteLine($"Excepción al enviar datos del equipo: {ex.Message}");
         }
     }
+
+    /// <summary>
+    /// Verifica si el equipo está activo (no bloqueado, hibernando o suspendido).
+    /// </summary>
+    private static bool EquipoEstaActivo()
+    {
+        try
+        {
+            using (ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_ComputerSystem"))
+            {
+                foreach (ManagementObject obj in searcher.Get())
+                {
+                    string userName = obj["UserName"] as string;
+                    if (!string.IsNullOrEmpty(userName))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            // Verificar si el sistema está en modo de suspensión o hibernación
+            using (ManagementObjectSearcher powerSearcher = new ManagementObjectSearcher("SELECT * FROM Win32_PowerManagementEvent"))
+            {
+                foreach (ManagementObject powerEvent in powerSearcher.Get())
+                {
+                    int eventType = Convert.ToInt32(powerEvent["EventType"]);
+                    // EventType 4: Suspendido, EventType 7: Reanudado
+                    if (eventType == 4) // Suspendido
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al verificar el estado del equipo: {ex.Message}");
+        }
+
+        // Si no se detecta actividad, se considera inactivo
+        return false;
+    }
+
 }
 
+/// <summary>
+/// Clase que representa la información del equipo.
+/// </summary>
 public class EquipoInfo
 {
-    public string NombreEquipo { get; set; }
-    public string IpEquipo { get; set; }
+    required public string NombreEquipo { get; set; }
+    required public string IpEquipo { get; set; }
 }
 
+/// <summary>
+/// Clase que representa la respuesta de la API.
+/// </summary>
 public class ApiResponse
 {
     public bool IsError { get; set; }
-    public string Message { get; set; }
-    public object Data { get; set; }
-    public object Data1 { get; set; }
+    required public string Message { get; set; }
+    required public object Data { get; set; }
+    required public object Data1 { get; set; }
 }
-
-

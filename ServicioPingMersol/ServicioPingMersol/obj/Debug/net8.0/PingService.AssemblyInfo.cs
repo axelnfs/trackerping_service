@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PingService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+290d116bde1ad7fa4f1160a9a7cc1f2851734924")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+500a66f5dde9dd03216fccf1a05166a96dbc0bf1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PingService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PingService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
